@@ -1,5 +1,6 @@
 #ifndef UDPSERVER_H
 #define UDPSERVER_H
+#include "Helper.h"
 
 #include <QObject>
 #include <QTimer>

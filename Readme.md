@@ -37,4 +37,11 @@ Fails, as the **/usr/local/lib/** is protected (Despite chmod, and addgrp etc) -
     sudo make install 
     
 
-   
+## Dev Env
+
+This was developed using
+
+   - QT 6.3
+   - Mac M1
+
+I am however un-aware of any Hardware/Software specific calls which should limit this codes functionality on other HW/OS.

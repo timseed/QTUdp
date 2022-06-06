@@ -26,11 +26,11 @@ void UdpClient::Setup()
 
 void UdpClient::processPendingDatagrams()
 {
-    qInfo() << "UDPClient received a packet";
+    INFO << "UDPClient received a packet";
     QByteArray datagram;
       while (udpSocket->hasPendingDatagrams()) {
           datagram.resize(int(udpSocket->pendingDatagramSize()));
           udpSocket->readDatagram(datagram.data(), datagram.size());
-          qInfo() << "Received datagram "<< datagram.constData();
+          INFO << "Received datagram "<< datagram.constData();
       }
 }

@@ -1,5 +1,6 @@
 #ifndef MYUDPLIB_H
 #define MYUDPLIB_H
+#include "Helper.h"
 
 #include "MyUDPLib_global.h"
 

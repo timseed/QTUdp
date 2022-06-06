@@ -41,11 +41,12 @@ void UdpServer::Start()
     clock = new QTimer(this);
     connect(clock, SIGNAL(timeout()), this, SLOT(SendBroardCast()));
     clock->start(1000*getTimer_interval());
+    INFO << "Started Timer";
 }
 
 void UdpServer::SendBroardCast()
 {
-    qInfo() << "Send Broardcast";
+    INFO << "Send Broardcast";
     QUdpSocket *udp = new QUdpSocket(this);
     QByteArray dgram = getMessage().toLatin1();
     udp->writeDatagram(dgram.data(), dgram.size(), QHostAddress::Broadcast, getPort());

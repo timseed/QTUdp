@@ -1,5 +1,6 @@
 #ifndef UDPCLIENT_H
 #define UDPCLIENT_H
+#include "Helper.h"
 
 #include "QtNetwork/qudpsocket.h"
 #include <QObject>
